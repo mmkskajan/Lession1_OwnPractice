@@ -19,7 +19,8 @@ namespace Lession1_OwnPractice.Controllers
         }
         [HttpPost]
         public ActionResult Employee(Employee employee)
-        {
+        { 
+
             DAL.DataContext db = new DAL.DataContext();
             db.Employees.Add(employee);
             db.SaveChanges();
